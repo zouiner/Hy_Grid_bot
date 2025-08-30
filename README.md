@@ -73,8 +73,13 @@ Create **.env** from the template:
 OKX_API_KEY=your_key
 OKX_API_SECRET=your_secret
 OKX_API_PASSPHRASE=your_passphrase
-# 1 = paper/simulated trading (default), 0 = live
-OKX_USE_SIMULATED=1
+
+# OKX DEMO (for testing)
+OKX_DEMO_API_KEY='your_key'
+OKX_DEMO_API_SECRET='your_secret'
+OKX_DEMO_API_PASSPHRASE='your_passphrase'
+
+OKX_ENV=demo # live
 
 # Telegram
 TELEGRAM_BOT_TOKEN=your_telegram_token
