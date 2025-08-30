@@ -5,9 +5,13 @@ from typing import Dict, Any
 STATE_FILE = Path('state.json')
 
 DEFAULT_STATE = {
-    'open_positions': {},   # symbol -> {mode, side, entry, size, stop, trail, grid_fills:[{buy,sell,filled}]}
+    'open_positions': {},   # symbol -> {mode, side, entry, size, stop, trail, grid:{}, grid_orders:[]}
     'alerts': {},           # symbol -> {'dip': [prices], 'breakout': [prices]}
-    'config': {},           # overrides
+    'config': {
+        'auto_dip': False,
+        'auto_breakout': False
+    },
+    'trades': []            # {id,symbol,mode,side,entry,stop,size,exit,pnl,R,open}
 }
 
 

@@ -6,3 +6,5 @@ numpy>=1.24.0
 ta>=0.11.0
 APScheduler>=3.10.4
 ujson>=5.9.0
+tzdata>=2024.1
+matplotlib
